@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Only_Video"
+            android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="查询所有视频文件" />
+    <item android:id="@+id/Only_Audio"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="查询所有音频文件" />
+    <item android:id="@+id/all_Media"
+        android:title="文件目录" />
+
+</menu>

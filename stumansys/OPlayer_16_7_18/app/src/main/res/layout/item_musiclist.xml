@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:background="@drawable/back_iv"
+        android:layout_marginRight="8dp"
+        android:id="@+id/iv_music_list"
+        android:layout_width="52dp"
+        android:layout_height="52dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="2dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            style="@android:style/TextAppearance.StatusBar.EventContent.Title"
+            android:textColor="@color/Gray"
+            android:layout_marginBottom="6dp"
+            android:singleLine="true"
+            android:id="@+id/tv_music_song_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="歌曲" />
+
+        <TextView
+            style="@android:style/TextAppearance.StatusBar.EventContent"
+            android:textColor="@color/Gray"
+            android:singleLine="true"
+            android:id="@+id/tv_music_singer_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="歌手" />
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btn_music_more"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/jiaobiao"
+        android:layout_marginBottom="2dp"
+        />
+
+
+
+
+</LinearLayout>

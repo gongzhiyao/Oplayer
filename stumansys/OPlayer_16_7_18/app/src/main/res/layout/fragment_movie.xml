@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.gongzhiyao.oplayer.WEB.Movie">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:id="@+id/refresh_moive"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="50sp"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="15sp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10sp"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="pullFromStart"
+        ptr:ptrHeaderTextColor="#ff0000"
+        ptr:ptrHeaderSubTextColor="#ff0000"
+        >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+</FrameLayout>

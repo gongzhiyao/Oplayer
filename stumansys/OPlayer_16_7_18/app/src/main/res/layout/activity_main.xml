@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.gongzhiyao.oplayer.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/Local_Music_Player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+       >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:alpha="150"
+            android:background="@drawable/shadow" />
+        <ProgressBar
+            android:id="@+id/progress_Bar_Local"
+            style="@style/StyleProgressBarMini"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/shape_progressbar_bg"
+            android:max="100"
+            android:progress="0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/iv_music"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/back_iv"
+                android:scaleType="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/tv_Local_Music_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="歌曲" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/tv_Local_Music_Singer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="歌手" />
+            </LinearLayout>
+            <TextView
+                android:textColor="@color/Black"
+                android:text="0:00"
+                android:id="@+id/time_Of_Music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageButton
+                android:id="@+id/btn_Local_Play_Or_Stop"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/stop"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btn_Web"
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+                android:background="@drawable/selector_web"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btn_Local"
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+                android:background="@drawable/selector_local"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btn_Search"
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+                android:background="@drawable/selector_search"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btn_Me"
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+                android:background="@drawable/selector_me"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug"><source path="F:\Android\OPlayer\library\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="F:\Android\OPlayer\library\src\androidTest\assets"/><source path="F:\Android\OPlayer\library\build\generated\assets\shaders\androidTest\debug"/></dataSet></merger>

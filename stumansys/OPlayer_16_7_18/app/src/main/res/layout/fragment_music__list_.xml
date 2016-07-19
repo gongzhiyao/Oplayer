@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gongzhiyao.oplayer.MusicFragment.Music_List_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/list_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:scrollbars="none"
+
+        >
+
+    </ListView>
+
+    <com.example.gongzhiyao.oplayer.ScrollBar.QuickAlphabeticBar
+        android:id="@+id/contact_list_fast_scroller"
+        android:layout_width="16dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/list_music"
+       android:background="@drawable/bg_list_letter"
+        android:scaleType="centerInside">
+
+    </com.example.gongzhiyao.oplayer.ScrollBar.QuickAlphabeticBar>
+
+    <TextView
+        android:text=""
+        android:id="@+id/tv_contact_list_fast_position"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#404040"
+        android:textSize="48dip"
+        android:typeface="sans"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.gongzhiyao.oplayer.LocalVideo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="11sp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/APPTitle_Local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OPlayer"
+                android:textColor="@color/Red"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="1sp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="3sp"
+                android:background="@color/Gray" />
+
+            <TextView
+                android:id="@+id/tv_Local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:text="文件目录"
+                android:textColor="@color/Gray"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ib_Refresh_Local"
+                android:layout_width="34sp"
+                android:layout_height="34sp"
+                android:background="@drawable/refresh_local" />
+
+
+            <ImageButton
+                android:id="@+id/ib_More_Local"
+                android:layout_width="34sp"
+                android:layout_height="34sp"
+                android:layout_marginLeft="8sp"
+                android:background="@drawable/more_local" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.example.gongzhiyao.oplayer.MarqueeTextView.MarqueeTextView
+        android:id="@+id/tv_Local_path"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_marginTop="1sp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/Gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1sp"
+        android:layout_weight="1"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_Local"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6sp"
+            android:layout_marginRight="6sp"
+            android:fastScrollEnabled="true"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/Local_Music_Player"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="gone">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="6dp"-->
+            <!--android:alpha="150"-->
+            <!--android:background="@drawable/shadow" />-->
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progress_Bar_Local"-->
+            <!--style="@style/StyleProgressBarMini"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:background="@drawable/shape_progressbar_bg"-->
+            <!--android:max="50000"-->
+            <!--android:progress="50" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="52dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/iv_music"-->
+                <!--android:layout_width="52dp"-->
+                <!--android:layout_height="52dp"-->
+                <!--android:background="@drawable/back_iv"-->
+                <!--android:scaleType="center" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_marginLeft="3dp"-->
+                <!--android:layout_marginTop="6dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_Local_Music_Name"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="歌曲" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_Local_Music_Singer"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="歌手" />-->
+            <!--</LinearLayout>-->
+
+            <!--<Chronometer-->
+                <!--android:id="@+id/time_Of_Music"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:format="%s" />-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/btn_Local_Play_Or_Stop"-->
+                <!--android:layout_width="42dp"-->
+                <!--android:layout_height="42dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:background="@drawable/stop"-->
+                <!--android:scaleType="fitXY" />-->
+        <!--</LinearLayout>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/Gray" />-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>
